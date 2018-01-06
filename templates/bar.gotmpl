@@ -1,0 +1,6 @@
+package bar
+
+func Bar()(string, error) {
+  f, _ := foo.Foo()
+  return fmt.Sprint(f, "bar"), nil
+}

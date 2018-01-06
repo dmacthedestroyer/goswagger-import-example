@@ -1,0 +1,18 @@
+consumes:
+- application/json
+info:
+  title: Goswagger Import Example
+  version: 0.1.0
+paths:
+  /foobar:
+    get:
+      summary: foo a bar, or vice versa
+      operationId: foobar
+      responses:
+        "200":
+          description: successful response
+produces:
+- application/json
+schemes:
+- http
+swagger: "2.0"

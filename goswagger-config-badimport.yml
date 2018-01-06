@@ -1,0 +1,13 @@
+layout:
+  application:
+  models:
+  operations:
+    - name:
+      source: asset:bar
+      target: "{{joinFilePath .Target \"bar\"}}"
+      file_name: "{{ .Name }}.go"
+    - name:
+      source: asset:foo
+      target: "{{joinFilePath .Target \"foo\"}}"
+      file_name: "{{.Name}}.go"
+  operation_groups:
